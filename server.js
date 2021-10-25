@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const api = require('./routes/index.js');
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const { readFromFile, writeToFile, readAndAppend } = require('./helpers/fsUtils');
 const app = express();
 const uuid = require('./helpers/uuid');
@@ -22,21 +22,18 @@ app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
-);
 
 // Get db folder route
 app.get('/api/notes', (req, res) => {
-    console.info(`${req.method} request received for notes`);
+  console.info(`${req.method} request received for notes`);
   
-    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+  readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
   
 });
 // post saves in front end reference index.js in public
 // take title and text from db.json
 app.post('/api/notes', (req, res) => {
-    const { title, text } = req.body;
+  const { title, text } = req.body;
 
   if (req.body) {
     const newNotes = {
@@ -52,3 +49,8 @@ app.post('/api/notes', (req, res) => {
     res.error('Error in adding new notes');
   }
 });
+
+
+app.listen(PORT, () =>
+  console.log(`App listening at http://localhost:${PORT} 🚀`)
+);
