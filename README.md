@@ -3,6 +3,9 @@
 
 #  Note Tracker
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+For Demo video please [click here](https://watch.screencastify.com/v/ZOlztKKqO3LGwN5j9AVe).
+
 ##  Write notes to yourself on Note Tracker. 
 ### Table of contents
 - [Installation](#installation)
@@ -32,8 +35,4 @@ Damien Luzzo, Ethan Cho.
 #### Test Instructions
 Jest
 ##### Questions
-If you have any questions please feel free to contact me at cortezstephanie222@yahoo.com <br>
-GitHub: CortezStephanie 
-
-##### Links 
-For Demo video please [click here](https://watch.screencastify.com/v/ZOlztKKqO3LGwN5j9AVe).
+If you have any questions please feel free to contact me through my GitHub: [CortezStephanie](https://github.com/CortezStephanie) 
