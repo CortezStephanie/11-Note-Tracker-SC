@@ -12,7 +12,18 @@
 ### Installation
 install npm i and npm inquirer 
 ### Usage
-navigate to the local host page by running node index.js. When you are at the page you are able to click get started and move on to the note tracker page. There you are able to type in a note and save it. When refreshed your note is still displayed on the page. 
+![start of app](./assets/images/start.png)<br>
+1. Press the start button to start adding notes
+![write a note](./assets/images/takeNote.png)<br>
+2. Click the Note Taker link to be redirected to the home page<br>
+3. Write your Note's Title here<br>
+4. Then write its description here
+![save note](./assets/images/saveNote.png)<br>
+5. Save your note by clicking the floppy disk icon 
+![saved note and start a new one](./assets/images/savedNoteAndAdd.png)<br> 
+6. Your note will be saved to the side with an option to delete<br>
+7. Add another note by clicking the add symbol 
+
 ## License
 This repository is covered by the MIT License  <br> 
 https://opensource.org/licenses/MIT
